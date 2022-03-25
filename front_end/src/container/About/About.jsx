@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import "./About.scss";
 import { urlFor, client } from "../../client";
+import AppWrap from "../../wrapper/AppWrap";
 // const abouts = [
 //   {title:'Web Development', description:'Based on a project created by me or another one, sent by you, I can program the website to be fully functional and responsive.', imageUrl:images.about01,},
 //   {title:'Frontend Development', description:'I am a good frontend developer',imageUrl:images.about03},
@@ -25,6 +26,7 @@ function About() {
 
   return (
     <>
+    
       <h2 className="head-text">
         I Know That <span>Good Apps</span>
         <br /> means <span>Good Business</span>
@@ -52,4 +54,4 @@ function About() {
   );
 }
 
-export default About;
+export default AppWrap(About,'about');
