@@ -5,8 +5,8 @@ export default {
 
   fields: [
     {
-      name: "years",
-      title: "Years",
+      name: "year",
+      title: "Year",
       type: "string",
     },
     {

@@ -19,7 +19,6 @@ function About() {
     const query = '*[_type=="abouts"]';
 
     client.fetch(query).then((data) => {
-      console.log(data)
       setAbouts(data);
     });
   }, []);
