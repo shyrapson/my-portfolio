@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import AppWrap from "../../wrapper/AppWrap";
+import {AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import ReactTooltip from "react-tooltip";
 
 import "./Skills.scss";
+
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -15,7 +16,6 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      console.log(data, "here");
       setExperiences(data);
     });
 
@@ -31,12 +31,14 @@ const Skills = () => {
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
+
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
               key={skill.name}
             >
+           
               <div
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
@@ -48,22 +50,25 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience) => (
-        
-            <motion.div className="app__skills-exp-item" key={experience.years}>
+          {experiences?.map((experience) => (
+      
+            <motion.div key={experience.years} className="app__skills-exp-item" >
+
               <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.years}</p>
+                <p className="bold-text">{experience?.years}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
-                  <>
+                {experience?.works?.map((work) => (
+                  < >
+                
                     <motion.div
+                    key={work?.name}
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className="app__skills-exp-work"
                       data-tip
                       data-for={work.name}
-                      key={work.name}
+                     
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
@@ -87,4 +92,9 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills,'skills') ;
+
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+"skills",
+"app__whitebg"
+);

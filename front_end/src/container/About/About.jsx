@@ -53,7 +53,7 @@ function About() {
 }
 
 export default AppWrap(
-          MotionWrap(About, "App__About"),
+          MotionWrap(About, "app__about"),
   "about",
   "app__whitebg"
 );
