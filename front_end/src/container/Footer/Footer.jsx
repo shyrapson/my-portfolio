@@ -59,7 +59,7 @@ function Footer() {
             type="text"
             placeholder="your name"
             value={name}
-            name={name}
+            name="name"
             onChange={handleChangeInput}
           />
         </div>
@@ -68,8 +68,9 @@ function Footer() {
             className="p-text"
             type="text"
             placeholder="Your Email"
-            name={email}
             value={email}
+            name="email"
+          
             onChange={handleChangeInput}
           />
         </div>
@@ -79,7 +80,7 @@ function Footer() {
             type="text"
             placeholder="Your Message"
             value={message}
-            name={message}
+            name="message"
             onChange={handleChangeInput}
           />
         </div>
