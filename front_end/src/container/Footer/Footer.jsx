@@ -30,9 +30,11 @@ function Footer() {
     }
     client.create(contact).then(()=>{
       setLoading(false)
-      setIsFormSubmitted(true)
+setIsFormSubmitted(true)
     })
+  
   }
+  
 
   return (
     <>
@@ -52,7 +54,7 @@ function Footer() {
           </a>
         </div>
       </div>
-   {isFormSubmitted ?   <div className="app__footer-form app__flex">
+   {!isFormSubmitted ?   <div className="app__footer-form app__flex">
         <div className="app__flex">
           <input
             className="p-text"
@@ -87,7 +89,7 @@ function Footer() {
         <button type="button" className="p-text" onClick={handleSubmit}>{loading ? 'Sending' :'Send Message'}</button>
       </div>: <div>
         <h3 className="head-text">
-          Thank you for getting in touch
+          Thank you for getting in touch!
         </h3>
         </div>}
     </>

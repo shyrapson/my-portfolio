@@ -25,7 +25,7 @@
         padding: 1rem;
         border-radius: 10px;
         cursor: pointer;
-        background-color: #fef4f5;
+        background-color: var(--lightpink-color);
 
         transition:all 0.3s ease-in-out ;
 
@@ -56,7 +56,7 @@
 }
 
 .app__footer-cards .app__footer-card:last-child {
-    background-color: #f2f7fb;
+    background-color: var(--darkgray-color);
 }
 .app__footer-form {
     width: 60%;
@@ -82,6 +82,10 @@
             font-family: var(--font-base);
             color: var(--secondary-color);
             outline: none;
+
+            &::placeholder{
+                color: var(--black-color);
+            }
         }
 
         textarea{

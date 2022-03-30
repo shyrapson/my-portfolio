@@ -7,7 +7,7 @@
 
   padding: 1rem 2rem;
 
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--nav--color);
   // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -15,7 +15,10 @@
   position: fixed;
   z-index: 2;
 }
-
+#toggle span{
+  font-size: 1.5rem;
+}
+div#toggle  {order: 2;}
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
@@ -93,7 +96,7 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
+order: 4;
   svg {
     width: 70%;
     height: 70%;

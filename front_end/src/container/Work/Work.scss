@@ -16,8 +16,8 @@
     .app__work-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
-        color: #000;
+        background-color: var(--white-color);
+        color: var(--black-color);
         font-weight: 800;
         cursor: pointer;
         transition:all 0.3s ease;
@@ -34,7 +34,7 @@
     }
     .item.active {
         background-color: var(--secondary-color);
-        color: #fff;
+        color: var(--white-color);
     }
 }
 .app__work-portfolio {
@@ -50,8 +50,8 @@
      margin: 2rem;
      padding: 1rem;
      border-radius: 0.5rem;
-     background-color: #fff;
-     color: #000;
+     background-color: var(--white-color);
+     color: var(--black-color);
 
      cursor: pointer;
      transition:all 0.3s ease;
@@ -105,7 +105,7 @@
         height: 50px;
         border-radius: 50%;
         background-color: rgba(0,0,0,0.5);
-        color: #fff;
+        color: var(--white-color);
 
         margin: 1rem;
         font-family: var(--font-base);
@@ -137,7 +137,7 @@
         
         padding: 00.5rem 1rem;
         border-radius: 10px;
-        background-color: #fff;
+        background-color: var(--white-color);
         top: -25px;
 
     }

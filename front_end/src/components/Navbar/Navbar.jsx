@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({toggleTheme,theme}) => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
@@ -37,6 +37,9 @@ const Navbar = () => {
             </ul>
           </motion.div>
         )}
+      </div>
+      <div onClick={()=>toggleTheme()} id="toggle">
+            {theme==='light-theme'?<span>🌙</span>: <span>💡</span>}
       </div>
     </nav>
   );
