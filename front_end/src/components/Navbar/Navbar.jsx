@@ -9,8 +9,7 @@ const Navbar = ({toggleTheme,theme}) => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h1>Rabiu Saidu</h1>
-        {/* <img src={images.logo} alt="img" /> */}
+       <h1>R<img src={images.my} alt="img"/>BIU</h1> 
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "contact", "work", "skills"].map((item) => (

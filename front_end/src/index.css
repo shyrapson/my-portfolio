@@ -13,6 +13,8 @@
   --lightpink-color:#fef4f5;
   --darkgray-color:#f2f7fb;
   --nav--color:rgba(255, 255, 255, 0.35);
+  --logo-color:red
+
 }
 
 .dark-theme {
@@ -28,6 +30,7 @@
   --lightpink-color:#5c5758;
   --darkgray-color: #474f56;
   --nav--color:#000;
+  --logo-color:#8796b1
 }
 .light-theme{
   --font-base: "DM Sans", sans-serif;
@@ -42,6 +45,7 @@
   --lightpink-color:#fef4f5;
   --darkgray-color:#f2f7fb;
   --nav--color:rgba(255, 255, 255, 0.35);
+  --logo-color:#7a8bc9
 }
 * {
   box-sizing: border-box;

@@ -23,10 +23,16 @@ div#toggle  {order: 2;}
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  
+h1 {
+  color:var(--logo-color);
+  box-shadow:2px 5px 2px 2px rgba(180, 184, 235, 0.37) ;
+  font-size: 30px;
+  font-weight: 500;
+}
   img {
-    width: 90px;
-    height: 20px;
+    width: 34px;
+    height: 23px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
