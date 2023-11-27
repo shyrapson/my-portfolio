@@ -15,20 +15,26 @@
   position: fixed;
   z-index: 2;
 }
-#toggle span{
+#toggle span {
   font-size: 1.5rem;
+  cursor: pointer;
 }
-div#toggle  {order: 2;}
+div#toggle {
+  order: 2;
+}
 .app__navbar-logo {
   display: flex;
+
+  font-family: 'Lobster', sans-serif;
+
   justify-content: flex-start;
   align-items: center;
-  
-h1 {
-  color:var(--logo-color);
-  font-size: 30px;
-  font-weight: 500;
-}
+
+  h1 {
+    color: var(--logo-color);
+    font-size: 30px;
+    font-weight: 500;
+  }
   img {
     width: 34px;
     height: 23px;
@@ -101,7 +107,7 @@ h1 {
   align-items: center;
   background-color: var(--secondary-color);
 
-order: 4;
+  order: 4;
   svg {
     width: 70%;
     height: 70%;
@@ -119,12 +125,12 @@ order: 4;
 
     width: 80%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
+
     background: url('../../assets/bgWhite.png');
     background-color: var(--white-color);
     background-size: cover;
@@ -180,4 +186,3 @@ order: 4;
     display: none;
   }
 }
-

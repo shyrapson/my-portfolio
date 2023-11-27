@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { motion } from "framer-motion";
-import { images } from "../../constants";
-import "./Navbar.scss";
+import React, { useState } from 'react';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { motion } from 'framer-motion';
+import { images } from '../../constants';
+import './Navbar.scss';
 
-const Navbar = ({toggleTheme,theme}) => {
+const Navbar = ({ toggleTheme, theme }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-       <h1>R<img src={images.my} alt="img"/>BIU</h1> 
+        <h1>RABIU</h1>
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "contact", "work", "skills"].map((item) => (
+        {['home', 'about', 'contact', 'work', 'skills'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -25,7 +25,7 @@ const Navbar = ({toggleTheme,theme}) => {
           <motion.div>
             <HiX onClick={() => setToggle(false)} />
             <ul className="app__navbar-links">
-              {["home", "about", "contact", "work", "skills"].map((item) => (
+              {['home', 'about', 'contact', 'work', 'skills'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`}>{item}</a>
                 </li>
@@ -34,8 +34,8 @@ const Navbar = ({toggleTheme,theme}) => {
           </motion.div>
         )}
       </div>
-      <div onClick={()=>toggleTheme()} id="toggle">
-            {theme==='light-theme'?<span>🌙</span>: <span>💡</span>}
+      <div onClick={() => toggleTheme()} id="toggle">
+        {theme === 'light-theme' ? <span>🌙</span> : <span>💡</span>}
       </div>
     </nav>
   );

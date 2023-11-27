@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,604&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@1,400;1,604&display=swap');
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: 'DM Sans', sans-serif;
 
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
@@ -10,15 +12,14 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  --lightpink-color:#fef4f5;
-  --darkgray-color:#f2f7fb;
-  --nav--color:rgba(255, 255, 255, 0.35);
-  --logo-color:red
-
+  --lightpink-color: #fef4f5;
+  --darkgray-color: #f2f7fb;
+  --nav--color: rgba(255, 255, 255, 0.35);
+  --logo-color: red;
 }
 
 .dark-theme {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: 'DM Sans', sans-serif;
 
   --primary-color: #11093f;
   --secondary-color: #eaeaf1;
@@ -26,14 +27,14 @@
   --lightGray-color: #fff;
   --gray-color: #fff;
   --brown-color: #46364a;
-  --white-color: #050505;
-  --lightpink-color:#5c5758;
+  --white-color: #232020;
+  --lightpink-color: #5c5758;
   --darkgray-color: #474f56;
-  --nav--color:#000;
-  --logo-color:#8796b1
+  --nav--color: #272525;
+  --logo-color: #cedcf4;
 }
-.light-theme{
-  --font-base: "DM Sans", sans-serif;
+.light-theme {
+  --font-base: 'DM Sans', sans-serif;
 
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
@@ -42,10 +43,10 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  --lightpink-color:#fef4f5;
-  --darkgray-color:#f2f7fb;
-  --nav--color:rgba(255, 255, 255, 0.35);
-  --logo-color:#7a8bc9
+  --lightpink-color: #fef4f5;
+  --darkgray-color: #f2f7fb;
+  --nav--color: rgba(255, 255, 255, 0.35);
+  --logo-color: #7a8bc9;
 }
 * {
   box-sizing: border-box;

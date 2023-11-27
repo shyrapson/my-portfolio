@@ -1,7 +1,6 @@
-
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  background: url('../../assets/bgIMG.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -53,51 +52,50 @@
   }
 }
 
-  
 .app__header-badge {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
 
-    .badge-cmp,
-    .tag-cmp {
-      padding: 1rem 2rem;
-      background: var(--white-color);
-      border-radius: 15px;
-      flex-direction: row;
-      width: auto;
-      position: relative;
-      z-index: 0;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    }
-    .badge-cmp::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 10;
-      border-left: 55px solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 30px solid var(--white-color);
-      position: absolute;
-      top: -18px;
-      left: 30%;
-      transform: translateX(-50%);
-    }
-    .tag-cmp::before {
-      content: "";
-      display: block;
-      width: 0;
-      height: 1;
-      border-left: 55px solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 30px solid var(--white-color);
-      position: absolute;
-      top: -16px;
-      left: 30%;
-      transform: translateX(-50%);
-    }
+  .badge-cmp,
+  .tag-cmp {
+    padding: 1rem 2rem;
+    background: var(--white-color);
+    border-radius: 15px;
+    flex-direction: row;
+    width: auto;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  .badge-cmp::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 10;
+    border-left: 55px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30px solid var(--white-color);
+    position: absolute;
+    top: -18px;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  .tag-cmp::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1;
+    border-left: 55px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30px solid var(--white-color);
+    position: absolute;
+    top: -16px;
+    left: 30%;
+    transform: translateX(-50%);
+  }
   .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
@@ -206,7 +204,7 @@
     width: 100%;
     object-fit: contain;
     z-index: 1;
-    border-radius: 20%;
+    border-radius: 50%;
   }
 
   .overlay_circle {
@@ -223,4 +221,3 @@
     margin: 2rem 0;
   }
 }
-

@@ -1,41 +1,45 @@
-import React,{useState,useEffect} from "react";
-import { Navbar } from "./components/index.js";
-import {About, Skills, Header, Work,Testimonial, Footer,} from "./container/index.js";
-import './App.scss'
+import React, { useState, useEffect } from 'react';
+import { Navbar } from './components/index.js';
+import {
+  About,
+  Skills,
+  Header,
+  Work,
+  Testimonial,
+  Footer,
+} from './container/index.js';
+import { motion } from 'framer-motion';
+import './App.scss';
+import { CustomCursor } from './config.js';
 
+const getStorageTheme = () => {
+  let theme = 'dark-theme';
 
-const getStorageTheme = ()=>{
-  let theme = 'dark-theme'
-
-  if(localStorage.getItem('theme')){
-    theme =localStorage.getItem('theme')
+  if (localStorage.getItem('theme')) {
+    theme = localStorage.getItem('theme');
+    return theme;
   }
-  return(theme)
-}
-
+};
 
 const App = () => {
-const [theme, setTheme] = useState(getStorageTheme())
+  const [theme, setTheme] = useState(getStorageTheme());
 
-
-
-const toggleTheme = ()=>{
-  if(theme === 'light-theme'){
-    setTheme('dark-theme')
-  } else {
-    setTheme ('light-theme')
-  }
-}
+  const toggleTheme = () => {
+    if (theme === 'light-theme') {
+      setTheme('dark-theme');
+    } else {
+      setTheme('light-theme');
+    }
+  };
 
   useEffect(() => {
-    document.documentElement.className = theme
-  localStorage.setItem('theme', theme)
-    
-  }, [theme])
-  
+    document.documentElement.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
     <div className="app">
-      <Navbar toggleTheme={toggleTheme} theme={theme}/>
+      <Navbar toggleTheme={toggleTheme} theme={theme} />
       <Header />
       <About />
       <Work />

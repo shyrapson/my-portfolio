@@ -1,16 +1,16 @@
-import React from "react";
-import "./Header.scss";
-import { motion } from "framer-motion";
-import { images } from "../../constants";
-import AppWrap from "../../wrapper/AppWrap";
-  
+import React from 'react';
+import './Header.scss';
+import { motion } from 'framer-motion';
+import { images } from '../../constants';
+import AppWrap from '../../wrapper/AppWrap';
+
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -18,7 +18,6 @@ const scaleVariants = {
 const Header = () => {
   return (
     <div className="app__header app__flex">
-  
       <motion.div
         whileInView={{ x: [-200, 0], opacity: [0, 1] }}
         transition={{ duration: 1.9 }}
@@ -28,14 +27,17 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Rabiu</h1>
+              <p className="p-text">HEY, I'M A</p>
+              <p className="p-text">
+                WEB DEVELOPER. I LOVE BUILDING NICE EXPERIENCES FOR STARTUPS &
+                AGENCIES.
+              </p>
             </div>
           </div>
-          <div className="tag-cmp app__flex">
+          {/* <div className="tag-cmp app__flex">
             <p className="p-text">Web Developer</p>
             <p className="p-text">Freelancer</p>
-          </div>
+          </div> */}
         </div>
       </motion.div>
       <motion.div
@@ -43,10 +45,10 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile-bg"  />
+        <img src={images.profile} alt="profile-bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
           all="profile_circle"
           className="overlay_circle"
@@ -55,7 +57,6 @@ const Header = () => {
       <motion.div
         variant={{ scaleVariants }}
         whileInView={scaleVariants.whileInView}
-        
         className="app__header-circles"
       >
         {[images.react, images.redux, images.sass].map((circle, index) => (
@@ -68,4 +69,4 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header,'home');
+export default AppWrap(Header, 'home');
