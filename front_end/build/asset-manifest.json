@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf4ab307.css",
-    "main.js": "/static/js/main.580a4219.js",
+    "main.css": "/static/css/main.c3e2c40b.css",
+    "main.js": "/static/js/main.8dfebc21.js",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/about01.png": "/static/media/about01.080509de05322b7aafda.png",
@@ -13,8 +13,8 @@
     "static/media/nb.png": "/static/media/nb.98f3253e32cc67a4cb5e.png",
     "static/media/asus.png": "/static/media/asus.514bc34955008a92e09f.png",
     "static/media/my.png": "/static/media/my.50aa9845dc6a13d8e971.png",
+    "static/media/profile.jpg": "/static/media/profile.9c0c767ad02e85b281a5.jpg",
     "static/media/adidas.png": "/static/media/adidas.83df8153294f9137d308.png",
-    "static/media/profile.png": "/static/media/profile.4c818051e1839f0c97b2.png",
     "static/media/bolt.png": "/static/media/bolt.64e7d9d30ece478ef3a0.png",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
@@ -29,12 +29,12 @@
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "static/media/skype.png": "/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/index.html",
-    "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.cf4ab307.css.map": "/static/css/main.cf4ab307.css.map",
-    "main.580a4219.js.map": "/static/js/main.580a4219.js.map"
+    "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
+    "main.c3e2c40b.css.map": "/static/css/main.c3e2c40b.css.map",
+    "main.8dfebc21.js.map": "/static/js/main.8dfebc21.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf4ab307.css",
-    "static/js/main.580a4219.js"
+    "static/css/main.c3e2c40b.css",
+    "static/js/main.8dfebc21.js"
   ]
 }
