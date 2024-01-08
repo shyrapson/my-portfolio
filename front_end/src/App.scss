@@ -55,44 +55,6 @@
     transition-property: width, height, border;
     will-change: width, height, transform, border;
     pointer-events: none;
-    &.fb,
-    &.insta,
-    &.twitter {
-      height: 60px;
-      width: 60px;
-      background: transparent;
-    }
-    &.fb {
-      border: solid 5px #3b5998;
-    }
-    &.insta {
-      border: solid 5px #c13584;
-    }
-    &.twitter {
-      border: solid 5px #1da1f2;
-    }
-  }
-  .icons-wrapper {
-    width: 40%;
-    height: 100%;
-    display: grid;
-    place-items: center center;
-    grid-template-columns: 1fr 1fr 1fr;
-    span {
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center center;
-      &:hover {
-        i {
-          color: var(--font-black);
-        }
-      }
-    }
-    i {
-      color: #d9d9d9;
-      font-size: 32px;
-    }
   }
 }
 

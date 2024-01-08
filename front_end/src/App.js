@@ -8,9 +8,9 @@ import {
   Testimonial,
   Footer,
 } from './container/index.js';
-import { motion } from 'framer-motion';
+
 import './App.scss';
-import { CustomCursor } from './config.js';
+import CustomCursor from './config.js';
 
 const getStorageTheme = () => {
   let theme = 'dark-theme';
@@ -39,6 +39,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <CustomCursor />
       <Navbar toggleTheme={toggleTheme} theme={theme} />
       <Header />
       <About />
